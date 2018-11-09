@@ -5,7 +5,7 @@ let playing = false;
 
 
 function setup() {
-  MonVid = createVideo(['assets/Munoz,MonicaProject3.mp4', 'assets/Munoz,MonicaProject3.webm']);;
+  MonVid = createVideo(['assets/project3.mp4', 'assets/project3.webm']);;
   MonVid.size(600, 600);
 }
 
