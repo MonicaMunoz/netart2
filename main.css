@@ -1,0 +1,35 @@
+body {
+  background-image: url("https://universoracionalista.org/wp-content/uploads/2015/07/6873190-cosmos-wallpaper-1068x668.jpg") ;
+  text-align: center;
+}
+
+}
+h1 {
+        text-align: left;
+        font-size: 24pt;
+        color: powderblue;
+        margin-bottom: 15px;
+        text-decoration: underline;
+        border-left: 15px;
+        border-width: 5px;
+        padding: inherit;
+        }
+
+
+h2 {
+      border-top: left;
+      text-align:left;
+      color: red;
+    }
+h3 {
+  font-size: 1.5em;
+  background-color: #BE9FE4;
+  padding: 10px;
+  margin: 10px;
+  text-align: right;
+  align: left;
+}
+p {
+  text-align: left;
+  color: white;
+}
