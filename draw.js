@@ -1,22 +1,18 @@
+var barWidth = 20;
+var lastBar = -1;
+
 function setup() {
-  createCanvas(710, 400);
-  background(102);
+  createCanvas(720, 400);
+  colorMode(HSB, width, height, 100);
+  noStroke();
 }
 
 function draw() {
-  // Call the variableEllipse() method and send it the
-  // parameters for the current mouse position
-  // and the previous mouse position
-  variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
-}
-
-// The simple method variableEllipse() was created specifically
-// for this program. It calculates the speed of the mouse
-// and draws a small ellipse if the mouse is moving slowly
-// and draws a large ellipse if the mouse is moving quickly
-
-function variableEllipse(x, y, px, py) {
-  var speed = abs(x-px) + abs(y-py);
-  stroke(speed);
-  ellipse(x, y, speed, speed);
+  var whichBar = mouseX / barWidth;
+  if (whichBar != lastBar) {
+    var barX = whichBar * barWidth;
+    fill(barX, mouseY, 66);
+    rect(barX, 0, barWidth, height);
+    lastBar = whichBar;
+  }
 }
