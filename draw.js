@@ -1,24 +1,10 @@
-var angle = 0;
+fill(0, 0, 255);
+ ellipse(100, 100, 50);
 
-function setup() {
-  createCanvas(710, 400);
-  background(102);
-  noStroke();
-  fill(0, 102);
-}
+ noStroke();
+ fill(100);
+ rect(0, 100, 100);
 
-function draw() {
-  // Draw only when mouse is pressed
-  if (mouseIsPressed === true) {
-    angle += 5;
-    var val = cos(radians(angle)) * 12.0;
-    for (var a = 0; a < 360; a += 75) {
-      var xoff = cos(radians(a)) * val;
-      var yoff = sin(radians(a)) * val;
-      fill(0);
-      ellipse(mouseX + xoff, mouseY + yoff, val, val);
-    }
-    fill(255);
-    ellipse(mouseX, mouseY, 2, 2);
-  }
-}
+ stroke(255, 0, 0);
+ strokeWeight(10);
+ rect(200, 200, 20)
